@@ -19,8 +19,85 @@ a {
   flex-direction: column;
   min-height: 100vh;
 }
-#main {
+
+main {
+  display: flex;
+  justify-content: center;
   flex: 1;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  padding: 20px;
+  width: 100%;
+}
+#main1 {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  background: #fff;
+  padding: 5px 8px 0 14px;
+  border: 1px solid #dfe1ef;
+  height: 44px;
+  width: 100%;
+  margin: 0 auto;
+
+  max-width: 584px;
+  border-radius: 24px;
+}
+#main1:hover {
+  box-shadow: 2px 2px 5px #dfe1ef;
+}
+#main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-img:hover {
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+#main1 img {
+  margin: 8px;
+}
+.text {
+  background: #444444;
+}
+#main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0 0;
+}
+.button {
+  margin: 11px 4px;
+  padding: 0 18px;
+  text-align: center;
+  border: 1px solid #f8f9fa;
+  border-radius: 5px;
+  height: 36px;
+  background: #f8f9fa;
+  color: #3c4043;
+  font-size: 14px;
+}
+.button:hover {
+  border: 1px solid #dfe1ef;
+  cursor: pointer;
 }
 
 #header {
@@ -48,7 +125,7 @@ a {
   padding: 5px;
   margin: 5px;
 }
-a:hover {
+.a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -61,7 +138,7 @@ a:hover {
 }
 
 .menu:hover {
-  background: #ccc;
+  background: #ebe9e9;
   border-radius: 50%;
 }
 
@@ -69,10 +146,6 @@ a:hover {
   vertical-align: bottom;
   width: 16px;
   align-items: center;
-}
-
-.pro {
-  opacity: none;
 }
 
 .pro-img {
@@ -94,28 +167,139 @@ a:hover {
   width: 40px;
   height: 40px;
 }
-
 .pro:hover {
-  background: #ccc;
+  background: #ebe9e9;
   border-radius: 50%;
   text-decoration: none;
 }
+#img-wri {
+  position: relative;
+}
+#img-wri::after {
+  content: "입력 도구";
+  position: absolute;
+  background: #fff;
+  display: none;
+}
+#img-wri::before {
+  display: none;
+  content: "";
+  border: 6px solid transparent;
+  border-bottom: 6px solid #444;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 28px;
+}
+#img-wri:hover:after {
+  display: block;
+  background: #444;
+  color: #fff;
+  font-size: 12px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+#img-wri:hover:before {
+  display: block;
+}
+#img-mic {
+  position: relative;
+}
+#img-mic::after {
+  content: "음성 검색";
+  position: absolute;
+  background: #ffffff;
+  display: none;
+}
+#img-mic::before {
+  display: none;
+  content: "";
+  border: 6px solid transparent;
+  border-bottom: 6px solid #444;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 31px;
+}
+#img-mic:hover:after {
+  display: block;
+  background: #444444;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 43px;
+}
+#img-mic:hover:before {
+  display: block;
+}
+
+#img-camera {
+  position: relative;
+}
+#img-camera::before {
+  display: none;
+  content: "";
+  border: 6px solid transparent;
+  border-bottom: 6px solid #444;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  top: 24px;
+}
+#img-camera::after {
+  content: "이미지로 검색";
+  position: absolute;
+  background: #f2f2f2;
+  display: none;
+}
+#img-camera:hover:after {
+  display: block;
+  background: #444444;
+  color: white;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#img-camera:hover:before {
+  display: block;
+}
+
 #footer {
   font-size: 15px;
-  position: fixed;
-  bottom: 0;
+
   width: 100%;
   color: #7089b8;
 }
 
 #footer .top nav {
   display: flex;
-  height: 50px;
+
   padding: 0 20px;
 
   align-items: center;
   background: #f2f2f2;
-  width: 100%;
 }
 
 #footer .bottom nav {
@@ -126,7 +310,7 @@ a:hover {
 
   justify-content: space-between;
   background: #f2f2f2;
-  width: 100%;
+
   border-top: 1px solid #dadce0;
 }
 #footer .bottom ul {

@@ -14,16 +14,16 @@
         <div class="left">
           <nav>
             <ul>
-              <li><a>Google 정보</a></li>
-              <li><a>스토어</a></li>
+              <li><a class="a">Google 정보</a></li>
+              <li><a class="a">스토어</a></li>
             </ul>
           </nav>
         </div>
         <div class="right">
           <nav>
             <ul>
-              <li><a>Gmail</a></li>
-              <li><a>이미지</a></li>
+              <li><a class="a">Gmail</a></li>
+              <li><a class="a">이미지</a></li>
               <li>
                 <a class="menu"
                   ><img
@@ -43,6 +43,40 @@
         <img
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         />
+        <div id="main">
+          <div id="main1">
+            <img
+              width="18px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9J_RUj8AOHbFdO9uE6J7DiwrmA7jT9c7uiw&usqp=CAU"
+            /><input class="search" type="text" />
+            <div id="main-img">
+              <div id="img-wri">
+                <img
+                  width="24px"
+                  src="data:image/png;base64,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"
+                />
+              </div>
+              <div id="img-mic">
+                <img
+                  width="30px"
+                  src="data:image/png;base64,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"
+                />
+              </div>
+
+              <div id="img-camera">
+                <img
+                  width="20px"
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Google_Lens_logo.png"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="main2">
+            <input class="button" type="button" value="Google 검색" />
+            <input class="button" type="button" value="I'm Feeling Lucky"
+          </div>
+        </div>
       </main>
       <footer id="footer">
         <div class="top">
@@ -55,14 +89,14 @@
         <div class="bottom">
           <nav>
             <ul>
-              <li><a>광고</a></li>
-              <li><a>비즈니스</a></li>
-              <li><a>검색어 관리</a></li>
+              <li><a class="a">광고</a></li>
+              <li><a class="a">비즈니스</a></li>
+              <li><a class="a">검색어 관리</a></li>
             </ul>
             <ul>
-              <li><a>개인정보처리방침</a></li>
-              <li><a>약관</a></li>
-              <li><a>설정</a></li>
+              <li><a class="a">개인정보처리방침</a></li>
+              <li><a class="a">약관</a></li>
+              <li><a class="a">설정</a></li>
             </ul>
           </nav>
         </div>
