@@ -39,16 +39,14 @@ main {
 }
 #main1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   align-items: center;
   background: #fff;
   padding: 5px 8px 0 14px;
   border: 1px solid #dfe1ef;
   height: 44px;
-  width: 100%;
   margin: 0 auto;
-
   max-width: 584px;
   border-radius: 24px;
 }
@@ -65,12 +63,18 @@ main {
 }
 .search {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex: 1;
   align-items: center;
   border: none;
   outline: none;
   margin: 10px;
+}
+.form {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  align-items: center;
 }
 #main1 img {
   margin: 8px;
@@ -290,9 +294,8 @@ main {
   font-size: 15px;
 
   width: 100%;
-  color: #7089b8;
+  color: #70757a;
 }
-
 #footer .top nav {
   display: flex;
 
@@ -305,7 +308,7 @@ main {
 #footer .bottom nav {
   display: flex;
   align-items: center;
-  height: 50px;
+
   padding: 0 20px;
 
   justify-content: space-between;
@@ -313,6 +316,7 @@ main {
 
   border-top: 1px solid #dadce0;
 }
+
 #footer .bottom ul {
   display: flex;
   align-items: center;
@@ -329,6 +333,16 @@ main {
 #footer .bottom li {
   margin: 0 15px;
   padding: 10px;
+}
+@media screen and (max-width: 1200px) {
+  #footer .bottom nav {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bottom nav {
+    flex-direction: column;
+  }
 }
 
 /* #footer {
