@@ -1,0 +1,101 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+#main {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+#log1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(219, 219, 219);
+  margin: 10px;
+  padding: 10px 0;
+  width: 350px;
+}
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  width: 100px;
+  background: #000;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0 16px;
+}
+.facebook {
+  display: flex;
+  align-items: center;
+}
+.login {
+  padding: 9px 0 7px 8px;
+  margin-top: 24px;
+  width: 258px;
+  border: 1px solid rgb(219, 219, 219);
+}
+.password {
+  padding: 9px 0 7px 8px;
+  margin-top: 10px;
+  width: 258px;
+  border: 1px solid rgb(219, 219, 219);
+}
+.log-but {
+  background: #4db5f9;
+  border: none;
+  padding: 8px 100px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 10px 40px;
+  width: 260px;
+  font-weight: bold;
+}
+
+#log2 {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px 0;
+  width: 350px;
+}
+
+span {
+  color: #4db5f9;
+  font-weight: bold;
+  margin-left: 5px;
+}
+#log2 p {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+#log3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link img {
+  margin: 5px;
+}
