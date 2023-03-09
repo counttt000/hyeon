@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   color: #212529;
+  margin: 0;
 }
 li {
   list-style: none;
@@ -90,6 +91,8 @@ h1 {
 }
 
 #main1 {
+  margin: 0;
+  padding: 0;
   background: #fbf7f2;
   display: flex;
   justify-content: center;
@@ -103,6 +106,8 @@ h1 {
 }
 
 #main2 {
+  margin: 0;
+  padding: 0;
   background: white;
   display: flex;
   justify-content: center;
@@ -135,6 +140,8 @@ h1 {
 }
 
 #main3 {
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,6 +190,8 @@ h1 {
 }
 
 #main4 {
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,4 +218,127 @@ h1 {
   margin: 0;
   position: relative;
   transform: translateX(-5%);
+}
+
+#main5 {
+  padding: 0;
+  margin: 0;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main5 h1 {
+  text-align: center;
+}
+
+#main5 img {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+}
+
+.m5-name {
+  font-size: 16px;
+}
+.m5-price {
+  font-size: 15px;
+  font-weight: 700;
+}
+.m5-ad {
+  font-size: 13px;
+}
+.m5-likes {
+  font-size: 13px;
+  color: #868e96;
+}
+
+#main5 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  padding: 0;
+}
+#main5 li div {
+  margin: 8px 0;
+}
+
+.main-sub {
+  width: 1200px;
+}
+#main5 p {
+  text-align: center;
+}
+
+.icon {
+  filter: grayscale(100%);
+  width: 30px;
+  height: 30px;
+}
+
+.icon2 {
+  opacity: 0.7;
+  width: 20px;
+  height: 20px;
+}
+#main6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main6 ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+#main6 li {
+  margin: 20px;
+}
+.bold {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#main5 .bold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-top li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-top .f-left {
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+}
+
+.f-top .f-right li {
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  flex-direction: column;
+}
+
+.f-top .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
