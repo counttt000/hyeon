@@ -1,78 +1,6 @@
-* {
-  box-sizing: border-box;
-  color: #212529;
-  margin: 0;
+main {
+  padding-top: 70px;
 }
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-}
-header a {
-  color: #4d5159;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1200px;
-  height: 70px;
-}
-.left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-}
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .left li {
-  margin: 0 30px 0 0;
-  font-size: 18px;
-}
-header .right li {
-  margin: 5px;
-  font-size: 16px;
-}
-header button {
-  font-size: 16px;
-}
-.search {
-  padding: 9px 12px;
-  margin: 16px 0;
-  width: 288px;
-  height: 40px;
-  border: none;
-  background: #f2f3f6;
-  border-radius: 8px;
-}
-.search::placeholder {
-  font-size: 16px;
-}
-.orange-text {
-  color: #ff6f0f;
-}
-.but {
-  background: #fff;
-  border: 1px solid #d1d3d8;
-  margin: 16px 0;
-  padding: 8px 16px;
-  color: #212124;
-  font-weight: 700;
-}
-
 h1 {
   font-size: 48px;
   margin: 16px 0;
@@ -152,7 +80,7 @@ h1 {
   padding: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #main3 li div {
@@ -275,14 +203,11 @@ h1 {
 
 .icon {
   filter: grayscale(100%);
-  width: 30px;
-  height: 30px;
 }
 
 .icon2 {
   opacity: 0.7;
-  width: 20px;
-  height: 20px;
+  margin: 5px;
 }
 #main6 {
   display: flex;
@@ -309,36 +234,4 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.f-top li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.f-top .f-left {
-  display: flex;
-  justify-content: center;
-  align-items: first baseline;
-}
-
-.f-top .f-right li {
-  display: flex;
-  justify-content: center;
-  align-items: first baseline;
-  flex-direction: column;
-}
-
-.f-top .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }

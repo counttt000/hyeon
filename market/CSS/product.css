@@ -1,0 +1,131 @@
+main {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main .crop {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+main .img {
+  position: absolute;
+  width: 700px;
+}
+
+.arrow-l {
+  position: absolute;
+}
+
+.arrow-l::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-radius: 1px;
+  transform: rotate(225deg);
+}
+.arrow-r {
+  position: absolute;
+}
+
+.arrow-r::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+
+#main1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main1 li {
+  margin: 5px;
+}
+
+.slider {
+  width: 640px;
+  height: 480px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider .imgs li {
+  position: absolute;
+  left: 640px;
+  transition-delay: 1s;
+}
+
+.bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  z-index: 2;
+}
+.bullets label {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.slider
+  input[type="radio"]:nth-child(1):checked
+  ~ .bullets
+  > label:nth-child(1) {
+  background: #fff;
+}
+.slider
+  input[type="radio"]:nth-child(2):checked
+  ~ .bullets
+  > label:nth-child(2) {
+  background: #fff;
+}
+.slider
+  input[type="radio"]:nth-child(3):checked
+  ~ .bullets
+  > label:nth-child(3) {
+  background: #fff;
+}
+
+.slider input[type="radio"]:nth-child(1):checked ~ .imgs > li:nth-child(1) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.slider input[type="radio"]:nth-child(2):checked ~ .imgs > li:nth-child(2) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.slider input[type="radio"]:nth-child(3):checked ~ .imgs > li:nth-child(3) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
